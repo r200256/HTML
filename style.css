@@ -1,6 +1,5 @@
-p:first-letter{color:red;}
-p:first-line{color:green}
-p:first-child{background:grey;}
-p:last-child{background:orange;}
-/*div.cont:hover{background:#223366;}*/
-a:visited{color:red;}
+div.dva{
+	background: url(./img/Aston_Martin.jpg) no-repeat fixed red;
+	width: 50%;
+	height: 20%;
+}
