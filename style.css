@@ -1,5 +1,26 @@
 div.dva{
-	background: url(./img/Aston_Martin.jpg) no-repeat fixed red;
-	width: 50%;
+	/*background: url(./img/Aston_Martin.jpg) no-repeat fixed red;*/
+	width: 80%;
 	height: 20%;
+	/*font-weight: bold;*/
+	/*text-transform: capitalize;*/
+	/*letter-spacing:2px;*/
+	/*word-spacing:200px;*/
+
+}
+.cont{
+	/*font-style: italic;*/
+	/*font-variant: small-caps;*/
+	/*font-family: sans-serif;*/
+	text-align:justify;
+	/*text-decoration:line-through;*/
+	text-indent:50px;
+	/*font-size:1em;*/
+
+}
+a{
+	text-decoration: none;
+}
+.ter{
+	vertical-align:sub;
 }
