@@ -1,10 +1,15 @@
-ul{
-	list-style-type: none;
-	font:bold 14px Arial;
+table{
+	border:2px solid red;
+	width:450px;
+	height: 100px;
+	border-spacing:5px;
+	/*border-collapse:collapse;*/
+	empty-cells:hide;
 }
-ol{
-	
-	list-style-position: inside;
-	list-style-image: url(img/icon.jpeg);
-	list-style-type:upper-roman;
+td{
+	border:2px solid green;
+	/*padding:5px;*/
+}
+caption{
+	caption-side:bottom;
 }
