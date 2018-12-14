@@ -1,12 +1,14 @@
-thead{
-	background-color: #2266aa;
+.cont{
+	display:block;
 }
-tfoot{
-	background-color: #55ddcc;
+form{
+	background-color: orange;
 }
-tbody{
-	background-color: #44ffaa;
+input{
+	background-color: #aaa;
+	display:block;
 }
-caption{
-	background-color: #9933bb;
+[type="checkbox"]{
+	padding:20px;
+	background-color: #ee7720;
 }
