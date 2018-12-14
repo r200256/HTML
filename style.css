@@ -1,14 +1,10 @@
-.fto{
-	font-variant: normalcd;
-	background-image: url(img/Aston_Martin.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
+ul{
+	list-style-type: none;
+	font:bold 14px Arial;
 }
-.test{
-	font-variant: normalcd;
-	background-image: url(img/Aston_Martin.jpg);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-attachment: fixed;
+ol{
+	
+	list-style-position: inside;
+	list-style-image: url(img/icon.jpeg);
+	list-style-type:upper-roman;
 }
