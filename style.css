@@ -1,15 +1,12 @@
-table{
-	border:2px solid red;
-	width:450px;
-	height: 100px;
-	border-spacing:5px;
-	/*border-collapse:collapse;*/
-	empty-cells:hide;
+thead{
+	background-color: #2266aa;
 }
-td{
-	border:2px solid green;
-	/*padding:5px;*/
+tfoot{
+	background-color: #55ddcc;
+}
+tbody{
+	background-color: #44ffaa;
 }
 caption{
-	caption-side:bottom;
+	background-color: #9933bb;
 }
