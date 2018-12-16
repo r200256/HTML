@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 p+p{
 	color:red;
 }
@@ -21,3 +22,10 @@ a[href="klo.com1"]{
 [href*="o.c"]{
 	background-color:blue;
 }
+=======
+/*
+select{
+	background-color: #99ddee;
+}
+*/
+>>>>>>> 73dcb79a5fcd3c6bb8d54e99f8292b887a16a574
