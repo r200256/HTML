@@ -1,31 +1,31 @@
-<<<<<<< HEAD
-p+p{
-	color:red;
+.a{
+	width: 250px;
+	height: 250px;
+	background:url(img/Lol.jpeg);
+	float:left;
 }
-div p{
-	background-color: orange;
+.b{
+	width: 250px;
+	height: 250px;
+	background:url(img/Smoking.png);
+	float:right;
 }
-div{
-	display: none;
+.c{
+	width: 250px;
+	height: 250px;
+	background:url(img/logo_Firefox.jpg);
+	float:right;
 }
-
-[href]{
-	display:block;
+.d{
+	width: 250px;
+	height: 250px;
+	background:url(img/Aston_Martin.jpg);
+	float: right;
 }
-a[href="klo.com1"]{
-	text-decoration: none;
-	color:green;
+.e{
+	width: 250px;
+	height: 250px;
+	background:url(img/icon.jpeg);
+	float:right;
+	
 }
-[href$="5"]{
-	background-color: yellow;
-}
-[href*="o.c"]{
-	background-color:blue;
-}
-=======
-/*
-select{
-	background-color: #99ddee;
-}
-*/
->>>>>>> 73dcb79a5fcd3c6bb8d54e99f8292b887a16a574
