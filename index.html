@@ -3,12 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script>
+  	function myFunction(){
+  		document.getElementById('demo').innerHTML="Paragraph changed";
+  	}
+  </script>
 </head>
 <body>
-	<p id="demo"></p>
-	<script>
-		document.getElementById('demo').innerHTML="First Java Script"
-	</script>
+	<h2>Java script in HEAD</h2>
+	<p id="demo">A Paragraph</p>
+	<button type="button" onclick="myFunction()"> Try it</button>
 </body>
 </html>
 
