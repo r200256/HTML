@@ -5,8 +5,14 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script this</h2>
-	<p id="demo">Какой-то Текст</p>
-	<button onclick="this.innerHTML=Date()">The Time i?</button><!--обработчик в кнопке-->
+	<h2>Java Script Button Function</h2>
+	
+	<button onclick="displayDate()">POWER</button>
+	<script>
+		function displayDate(){
+			document.getElementById("demo").innerHTML=Date();
+		}
+	</script>
+	<p id="demo">HEADER</p>
 </body>
 </html>
