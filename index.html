@@ -5,11 +5,24 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Arrays</h2>
+	<h2>Java Script Objects</h2>
 	<p id="demo">Какой-то Текст</p>
 	<script>
-		var cars=["Saab","Volvo","BMW"];
-		document.getElementById("demo").innerHTML=cars[0]+"-"+cars[1]+"-"+cars[2];
+		
+		var person = {
+			firstName:"John",
+			LastName:"Doe",
+			age:50,
+			eyeColor:"blue"
+		};
+		document.getElementById("demo").innerHTML=
+		person.firstName
+		+"---"+
+		person.LastName
+		+"---"+
+		person.age
+		+"---"+
+		person.eyeColor;
 	</script>
 </body>
 </html>
