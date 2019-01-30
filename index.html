@@ -5,20 +5,8 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script This Object to Object</h2>
+	<h2>Java Script The Click Button</h2>
 	<p id="demo">Какой-то Текст</p>
-	<script>
-	var person1={
-		fullName:function(){
-		return this.firstName+"->"+this.lastName;
-		}
-	}
-	var person2={
-	firstName:"John",
-	lastName:"Doe",
-	}
-	var x=person1.fullName.call(person2);
-	document.getElementById("demo").innerHTML=x;
-	</script>
+	<button onclick="getElementById('demo').innerHTML=Date()">The Time i?</button>
 </body>
 </html>
