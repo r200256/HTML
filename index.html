@@ -5,24 +5,25 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Objects</h2>
+	<h2>Java Script Function</h2>
 	<p id="demo">Какой-то Текст</p>
+	<p id="demo2">1111111111111111</p>
 	<script>
-		
-		var person = {
-			firstName:"John",
-			LastName:"Doe",
-			age:50,
-			eyeColor:"blue"
-		};
-		document.getElementById("demo").innerHTML=
-		person.firstName
-		+"---"+
-		person.LastName
-		+"---"+
-		person.age
-		+"---"+
-		person.eyeColor;
+	
+		var x = myFunction(50,7);
+		document.getElementById("demo").innerHTML = x;
+		function myFunction(a,b){
+			return a*b;
+		}
+
+		/*
+		var x = myFunction(4, 3);
+			document.getElementById("demo").innerHTML = x;
+
+			function myFunction(a, b) {
+			  return a * b;
+			}
+		*/
 	</script>
 </body>
 </html>
