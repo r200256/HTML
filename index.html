@@ -5,12 +5,14 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Sting Propeties</h2>
-	<p id="demo">HEADER</p>
+	<h2>JAva Script Sring metods</h2>	
+	<p id="demo">LOLlolLOLlol</p>
+	<p id="demo1">LOLlolLOLlol</p>
 	<script>
-		var txt="ABCDEFGHIKLMNOPRST__S___)(&^&^555555555555555&^%^%$%$#$#!";
-		document.getElementById("demo").innerHTML=txt.indexOf('SA');			<!--почему при  поиске НН Выходит HEADER --> если указано без ковычек
-		и показывает -1 если не найденно значение поиска -->
-			</script>	
+		var str="Please dfgdfg  locate where 'locate'   ocurs!";
+		//var pos=str.lastIndexOf(' ');
+		document.getElementById('demo').innerHTML=str.lastIndexOf("eas");
+		document.getElementById("demo1").innerHTML=str.length;
+	</script>
 </body>
 </html>
