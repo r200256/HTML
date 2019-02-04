@@ -5,25 +5,19 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Sring Metods Replace()</h2>	
+	<h2>Java Script Convert string to Lower and Upper </h2>	
 	<p id="demo">Offise Microsoft JAva Script Sring Metods Replace()</p>
 	<p id="demo1">LOLlolLOLlol</p>
 	<button onclick="myFunction()">Жми Сюда</button>
 	<script>
 	
 		function myFunction(){
-			var str=document.getElementById("demo").innerHTML;
-			document.getElementById("demo").innerHTML=str.replace("Microsoft","DOM Model");
-			document.getElementById("demo2").innerHTML=str.length
-		}
-/*
-		function myFunction(){
-			var str=document.getElementById("demo").innerHTML;
-			var txt=str.replace("Microsoft","Dom Model");
-			document.getElementById("demo").innerHTML=txt;
-			document.getElementById("demo1").innerHTML=str.length;
-		}
-*/		
+			
+			var text=document.getElementById("demo").innerHTML;
+			document.getElementById("demo").innerHTML=text.toLowerCase();
+			document.getElementById("demo1").innerHTML=text.toUpperCase();
+			}
+	
 	</script>
 </body>
 </html>
