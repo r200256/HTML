@@ -5,15 +5,16 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Metods toString() </h2>
+	<h2>Java Script Metods toExponential() </h2>
 	<p id="demo">Offise Microsoft JAva Script Sring Metods Replace()</p>
-	<p id="demo1">LOLlolLOLlol</p>
+	<!--<p id="demo1">LOLlolLOLlol</p>-->
 	<script>
-		var x=123;
+		var x=9.656
 		document.getElementById("demo").innerHTML=
-			x.toString()+"<br>"+
-			(123).toString()+"<br>"+
-			(100+23).toString()+"<br>";
+			x.toExponential()+"<br>"+
+			x.toExponential(2)+"<br>"+
+			x.toExponential(4)+"<br>"+
+			x.toExponential(6);
 
 	</script>
 </body>
