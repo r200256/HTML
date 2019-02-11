@@ -5,24 +5,18 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Logig --> if elseif else </h2>
+	<h2>Java Script Logig for(x in person){...}</h2>
 	<p id="demo">Offise Microsoft JAva Script Sring Metods Replace()</p>
 	<!--<p id="demo1">LOLlolLOLlol</p>-->
 	<button onclick="myFunction()">Try it</button>
 	<script>
-	function myFunction(){
-		var greeting;
-		var time=new Date().getHours();
-		if(time<10){
-			greeting="Good morning";
-		} else if(time<20){
-			greeting="Goog day";
-		} else{
-			greeting="Good evening";
+		var txt="";
+		var person={fname:"John",lname:"Doe",age:25};
+		var x;
+		for (x in person){
+			txt+=person[x]+"-->";
 		}
-		document.getElementById("demo").innerHTML=greeting+time;
-	}
-		
+		document.getElementById("demo").innerHTML=txt;
 	</script>
 	
 </body>
