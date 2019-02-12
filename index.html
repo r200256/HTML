@@ -5,18 +5,30 @@
 	<title>Document</title>
 </head>
 <body>
-	<h2>Java Script Logig for(x in person){...}</h2>
+	<h2>Java Script Try catch throw</h2>
 	<p id="demo">Offise Microsoft JAva Script Sring Metods Replace()</p>
 	<!--<p id="demo1">LOLlolLOLlol</p>-->
-	<button onclick="myFunction()">Try it</button>
+	<hr>
+	<p>Please input a number between 5 and 10:</p>
+	<input id="demo" type="text">
+	<button type="batton" onclick="myFunction()">Try input</button>
+	<p id="p01">______</p>
 	<script>
-		var txt="";
-		var person={fname:"John",lname:"Doe",age:25};
-		var x;
-		for (x in person){
-			txt+=person[x]+"-->";
+		function myFunction(){
+			var message,x;
+			message=document.getElementById("p01");
+			message.innerHTML="";
+			x=document.getElementById("demo").value;
+			try{
+				if(x=="") throw "empty";
+				//if(isNaN(x)) throw "not a number";
+				x=Number(x);
+				if(x<5) throw "to low";
+				if(x>10) throw "too high";
+			}catch(err){
+				message.innerHTML="input is --->>> ---"+err;
+			}
 		}
-		document.getElementById("demo").innerHTML=txt;
 	</script>
 	
 </body>
