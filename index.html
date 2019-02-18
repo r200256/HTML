@@ -5,20 +5,17 @@
 	<title>JavaScript Setter</title>
 </head>
 <body>
-	<p id="demo1"></p>
 	<p id="demo"></p>
 	<script>
-		var person={
-			firstName:"John",
-			lastName:"Doe",
-			language: "NO",
-			set lang(value){
-				this.language=value;
-			}
-		};
-		document.getElementById("demo1").innerHTML=person.language;
-		person.lang="ru";
-		document.getElementById("demo").innerHTML=person.language;
+		function Person(first,last,age,eye){
+			this.firstname=first;
+			this.lastName=last;
+			this.age=age;
+			this.eyeColor=eye;
+		}
+		Person.prototype.nationality="English";
+		var myFather = new Person("John","Doe",50,"blue");
+		document.getElementById("demo").innerHTML="Ta-dam"+myFather.nationality;
 	</script>
 </body>
 </html>
