@@ -2,24 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript Can Validate Input</title>
+	<title>JavaScript Setter</title>
 </head>
 <body>
-	<h1>JavaScript Form</h1>	
-	<input type="text" id="numb">
-	<button type="button" onclick="myFunction()">Кнопка</button>
-	<p id="demo">XXXXXX</p>
+	<p id="demo1"></p>
+	<p id="demo"></p>
 	<script>
-		function myFunction(){
-			var x,text;
-			x=document.getElementById("numb").value;
-			if(isNaN(x)|| x<1 || x>10){
-				text="Input not valid";
-			}else{
-				text="Input OK"
+		var person={
+			firstName:"John",
+			lastName:"Doe",
+			language: "NO",
+			set lang(value){
+				this.language=value;
 			}
-			document.getElementById("demo").innerHTML =text;
-		}
+		};
+		document.getElementById("demo1").innerHTML=person.language;
+		person.lang="ru";
+		document.getElementById("demo").innerHTML=person.language;
 	</script>
 </body>
 </html>
