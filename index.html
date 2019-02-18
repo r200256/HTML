@@ -6,16 +6,22 @@
 </head>
 <body>
 	<p id="demo"></p>
+	<p id="demo1"></p>
 	<script>
 		function Person(first,last,age,eye){
 			this.firstname=first;
 			this.lastName=last;
 			this.age=age;
 			this.eyeColor=eye;
-		}
+		};
+		Person.prototype.name=function(){
+			return this.firstname+"--"+this.lastName;
+		};
 		Person.prototype.nationality="English";
 		var myFather = new Person("John","Doe",50,"blue");
 		document.getElementById("demo").innerHTML="Ta-dam"+myFather.nationality;
+		
+		document.getElementById("demo1").innerHTML="-->"+myFather.name();
 	</script>
 </body>
 </html>
