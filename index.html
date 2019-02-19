@@ -4,20 +4,20 @@
 	<meta charset="UTF-8">
 	<title>JavaScript closures</title>
 </head>
+
 <body>
+	<button type="button" onclick="myFunction()">Count</button>
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		document.getElementById("demo").innerHTML=add();
-		function add(){
-			var counter =0;
-			function plus(){counter+=1;}
-			plus();
-			plus();
-			plus();plus();
-			plus();
-
-			return counter;
+		var add =(function(){
+			var counter = 0;
+			return function(){counter+=1;
+				return counter;
+			}
+		})();
+		function myFunction(){
+			document.getElementById("demo").innerHTML=add();
 		}
 	</script>
 </body>
