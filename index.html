@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript function Call с аргументами</title>
+	<title>JavaScript function Apply с аргументами</title>
 </head>
 <body>
 	<p id="demo"></p>
@@ -21,7 +21,7 @@
 			firstName:"Mary",
 			lastName:"Duik"
 		}
-		var x=person.fullName.call(person2,"Oslo","Norway");
+		var x=person.fullName.apply(person2,["London",["Moscow"]]);
 		document.getElementById("demo").innerHTML=x;
 	</script>
 </body>
