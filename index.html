@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript function arguments.length</title>
+	<title>JavaScript function constructor</title>
 </head>
 <body>
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		function findMax(){
-			var i;
-			var max = -Infinity;
-			for(i=0;i<arguments.length;i++){
-				if (arguments[i]>max) {
-					max=arguments[i];	
-				}
-			}
-			return max;
-			//document.getElementById("demo").innerHTML=findMax(4,5,6);
+		function myFunction(arg1,arg2){
+			this.firstName=arg1;
+			this.lastName=arg2;
+			this.diem=function() {
+				return "<hr>"+this.firstName+"----000---"+this.lastName;
+			};
 		}
-		document.getElementById("demo").innerHTML=findMax(44,5,6);
+		var x=new myFunction("John","Doe");
+		document.getElementById("demo").innerHTML=x.firstName+"<-->"+x.lastName+x.diem();
 	</script>
 </body>
 </html>
