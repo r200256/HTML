@@ -2,21 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript function constructor</title>
+	<title>JavaScript function Call</title>
 </head>
 <body>
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		function myFunction(arg1,arg2){
-			this.firstName=arg1;
-			this.lastName=arg2;
-			this.diem=function() {
-				return "<hr>"+this.firstName+"----000---"+this.lastName;
-			};
+		var person={
+			fullName:function(){
+				return this.firstName+"-"+this.lastName;
+			}
 		}
-		var x=new myFunction("John","Doe");
-		document.getElementById("demo").innerHTML=x.firstName+"<-->"+x.lastName+x.diem();
+		var person1={
+			firstName:"John",
+			lastName:"Doe"
+		}
+		var person2={
+			firstName:"Mary",
+			lastName:"Duik"
+		}
+		var x=person.fullName.call(person2);
+		document.getElementById("demo").innerHTML=x;
 	</script>
 </body>
 </html>
