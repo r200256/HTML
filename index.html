@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript function Apply с аргументами</title>
+	<title>JavaScript Global variable</title>
 </head>
 <body>
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		document.getElementById("demo").innerHTML=Math.max.apply(null,[50,900,3]);
+		var counter=0;
+		function add(){
+			counter+=1;
+		}
+		add();
+		add();
+		add();
+		add();
+		add();
+		document.getElementById("demo").innerHTML="The counter is - "+counter;
 	</script>
 </body>
 </html>
