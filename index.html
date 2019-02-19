@@ -2,22 +2,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript Global variable</title>
+	<title>JavaScript function in function</title>
 </head>
 <body>
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		var counter=0;
+		document.getElementById("demo").innerHTML=add();
 		function add(){
-			counter+=1;
+			var counter =0;
+			function plus(){counter+=1;}
+			plus();
+			plus();
+			plus();plus();
+			plus();
+			
+			return counter;
 		}
-		add();
-		add();
-		add();
-		add();
-		add();
-		document.getElementById("demo").innerHTML="The counter is - "+counter;
 	</script>
 </body>
 </html>
