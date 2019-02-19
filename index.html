@@ -8,21 +8,7 @@
 	<p id="demo"></p>
 	<p id="demo1"></p>
 	<script>
-		var person={
-			fullName:function(city,country){
-				return this.firstName+"-"+this.lastName+","+city+","+"country";
-			}
-		}
-		var person1={
-			firstName:"John",
-			lastName:"Doe"
-		}
-		var person2={
-			firstName:"Mary",
-			lastName:"Duik"
-		}
-		var x=person.fullName.apply(person2,["London",["Moscow"]]);
-		document.getElementById("demo").innerHTML=x;
+		document.getElementById("demo").innerHTML=Math.max.apply(null,[50,900,3]);
 	</script>
 </body>
 </html>
