@@ -6,13 +6,22 @@
 </head>
 <body>
 <h1>Finding HTML Elements by by Query selector</h1>
-<p class="intro">0000</p>
-<p class="intro">111</p>
-<p class="intro3">22</p>
-<p class="intro4">3</p>
-<p id="demo">wwwwwwww</p>
-<script>
-	var x=document.querySelectorAll("p.intro");
-	document.getElementById("demo").innerHTML="-->"+x.length+"---"//+x[55].innerHTML
-</script>
+	<form action="#" id="frm1">
+		First name <input type="text" name="fname" value="Donald">
+		Last name <input type="text" name="lname" value="Duck">
+		<input type="submit" value="XXL">
+	</form>
+	<button onclick="myFunction()">Go</button>
+	<p id="demo"></p>
+	<script>
+		function myFunction(){
+			var x=document.forms["frm1"];
+			var text="";
+			var i;
+			for(i=0;i<x.length;i++){
+				text+=x.elements[i].value+"<br>";
+			}
+			document.getElementById("demo").innerHTML=text;
+		}
+	</script>
 </html>
