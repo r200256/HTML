@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Finding HTML Elements by by Query selector</title>
 </head>
 <body>
-	<p>Hello World</p>
-	<p class="intro">11111111</p>
-	<p class="intro">22222222</p>
-	<p id="demo">----</p>
-	<script>
-		var x=document.getElementsByClassName("intro");
-		document.getElementById("demo").innerHTML="zzz"+"--"+x.length+"---"+x[0].innerHTML+"---"+x[1].innerHTML+"---";
-	</script>
-</body>
+<h1>Finding HTML Elements by by Query selector</h1>
+<p class="intro">0000</p>
+<p class="intro">111</p>
+<p class="intro3">22</p>
+<p class="intro4">3</p>
+<p id="demo">wwwwwwww</p>
+<script>
+	var x=document.querySelectorAll("p.intro");
+	document.getElementById("demo").innerHTML="-->"+x.length+"---"//+x[55].innerHTML
+</script>
 </html>
