@@ -2,23 +2,16 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>JavaScript closures</title>
+	<title>Document</title>
 </head>
-
 <body>
-	<button type="button" onclick="myFunction()">Count</button>
-	<p id="demo"></p>
-	<p id="demo1"></p>
+	<p>Hello World</p>
+	<p class="intro">11111111</p>
+	<p class="intro">22222222</p>
+	<p id="demo">----</p>
 	<script>
-		var add =(function(){
-			var counter = 0;
-			return function(){counter+=1;
-				return counter;
-			}
-		})();
-		function myFunction(){
-			document.getElementById("demo").innerHTML=add();
-		}
+		var x=document.getElementsByClassName("intro");
+		document.getElementById("demo").innerHTML="zzz"+"--"+x.length+"---"+x[0].innerHTML+"---"+x[1].innerHTML+"---";
 	</script>
 </body>
 </html>
