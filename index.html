@@ -2,20 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Finding HTML Elements by by Query selector</title>
+	<title>JavaScript closures</title>
 </head>
 <body>
-<h1>Finding HTML Elements by by Query selector</h1>
-	<form action="#" id="frm1">
-		First name <input type="text" name="fname" value="Donald">
-		Last name <input type="text" name="lname" value="Duck">
-		<input type="submit" value="XXL">
-	</form>
-	<button onclick="myFunction()">Go</button>
-	<p id="demo"></p>
-	<script>
-		function myFunction(){
-			document.write(Date());
-		}
-	</script>
+	<h1 onclick="this.innerHTML='Ooops!'">Click on this text!</h1>
+</body>
 </html>
