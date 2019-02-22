@@ -2,23 +2,25 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-<<<<<<< HEAD
 	<title>Event DOM</title>
 </head>
 <body>
 	<div style="position:relative">
-		<div id="de" onmouseover="mOver(this)" onmouseout="mOut(this)" style="width: 200px; height: 200px;">Ну наведи на меня мышку</div>
+		<div id="de" onmousedown="mOver(this)" onmouseup="mOut(this)" style="width: 200px; height: 200px;">Ну наведи на меня мышку</div>
 	</div>
 	<script>
 		function mOver(obj){
 			obj.innerHTML="Навел отлично чувак";
 			css();
+			document.getElementById("de").style.background="red";
 		}
 		function mOut(obj){
 			obj.innerHTML="Потеря фокуса";
+			css();
+			document.getElementById("de").style.background="green";
 		}
 		function css(){
-			document.getElementById("de").style.background="red";
+			
 			document.getElementById("de").style.position="absolute";
 			document.getElementById("de").style.top="50%";
 			document.getElementById("de").style.left="50%";
@@ -28,16 +30,4 @@
 
 </html>
 
-=======
-	<title>JavaScript closures</title>
-</head>
-<body>
-	<h1 onclick="changeText(this)">Click on this text!</h1>
-	<script>
-		function changeText(id){
-			id.innerHTML="Ooops";
-		}
-	</script>
-</body>
-</html>
->>>>>>> f4871c2b28643777f5fcdbba49d89a7cbd636204
+
