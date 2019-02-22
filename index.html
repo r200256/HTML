@@ -2,20 +2,28 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Finding HTML Elements by by Query selector</title>
+	<title>Event DOM</title>
 </head>
 <body>
-<h1>Finding HTML Elements by by Query selector</h1>
-	<form action="#" id="frm1">
-		First name <input type="text" name="fname" value="Donald">
-		Last name <input type="text" name="lname" value="Duck">
-		<input type="submit" value="XXL">
-	</form>
-	<button onclick="myFunction()">Go</button>
-	<p id="demo"></p>
+	<div style="position:relative">
+		<div id="de" onmouseover="mOver(this)" onmouseout="mOut(this)" style="width: 200px; height: 200px;">Ну наведи на меня мышку</div>
+	</div>
 	<script>
-		function myFunction(){
-			document.write(Date());
+		function mOver(obj){
+			obj.innerHTML="Навел отлично чувак";
+			css();
+		}
+		function mOut(obj){
+			obj.innerHTML="Потеря фокуса";
+		}
+		function css(){
+			document.getElementById("de").style.background="red";
+			document.getElementById("de").style.position="absolute";
+			document.getElementById("de").style.top="50%";
+			document.getElementById("de").style.left="50%";
 		}
 	</script>
+</body>
+
 </html>
+
