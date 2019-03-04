@@ -8,7 +8,7 @@
 	<h1 id="id01">My first Page</h1>
 	<p id="id02">Duo text</p>
 	<script>
-		document.getElementById("id02").innerHTML=document.getElementById("id01").innerHTML;
-	</script>
+		document.getElementById("id02").innerHTML=
+		document.getElementById("id01").firstChild.nodeValue;
 </body>
 </html>
