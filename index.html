@@ -6,13 +6,30 @@
 </head>
 <body>
 	<script>
-		function showMessage(from,text){
-			text=text||"Text ne peredan";//операция сравнения 
-			console.log(from+">>>>>"+"text");
+		/*function checkAge(age){
+			if (age>18){
+				return true;
+			}else{
+				//return confirm("Родители разрешили?");
+				return false;
+			}
 		}
-		showMessage("Macha","Privet");
-		showMessage("OGO");
-		showMessage();
+		var age=prompt("Ваш возраст");
+		if (checkAge(age)){
+			alert("Доступ разрешен")
+		}else{
+			alert("В доступе отказано");
+		}
+		*/
+		/*function doNothing(){
+			return;
+		}
+		console.log(doNothing()===undefined);
+		*/
+		function checkAge(){
+			age>18? return true:return false;
+			(age>18)= return true||return false
+		}
 	</script>
 
 </body>
