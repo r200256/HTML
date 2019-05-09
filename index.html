@@ -6,19 +6,13 @@
 </head>
 <body>
 	<script>
-		var arg=prompt("Введите arg?");
-		switch(arg){
-			case '0':
-			case '1':
-				alert("Один или Ноль");
-			case '2': 
-				alert("Два");
-				break;
-			case 3:
-				alert("Никогда не выполниться");
-			default:
-				alert("Неизвестное значение:"+ arg);
+		function showMessage(from,text){
+			text=text||"Text ne peredan";//операция сравнения 
+			console.log(from+">>>>>"+"text");
 		}
+		showMessage("Macha","Privet");
+		showMessage("OGO");
+		showMessage();
 	</script>
 
 </body>
