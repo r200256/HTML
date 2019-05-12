@@ -5,14 +5,20 @@
 	<title>LearnJavaScript</title>
 </head>
 <!--<script src="style.js"></script>-->
+
 <body>
 	<script>
-		//[1,2].forEach(alert);
-		var a=+prompt("Первое число",0);
+		var str="Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
+		var target = "Иа";
+		var pos = 0;
+		while(true) {
+			var foundPos = str.indexOf(target, pos);
+			if (foundPos==-1) break;
+			console.log(foundPos);
+			//debugger;
+			pos=foundPos+1;
+		}
 
-		var b=+prompt("Второе число",0);
-
-		console.log("Сумма равна   "+(a+b));
 
 	</script>
 
