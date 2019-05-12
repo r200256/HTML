@@ -8,19 +8,23 @@
 
 <body>
 	<script>
-		var str="Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
-		var target = "Иа";
-		var pos = 0;
-		while(true) {
-			var foundPos = str.indexOf(target, pos);
-			if (foundPos==-1) break;
-			console.log(foundPos);
-			//debugger;
-			pos=foundPos+1;
+	//ucFirst("вася") == "Вася";
+	//ucFirst("") == ""; // нет ошибок при пустой строке
+	var str1="вася";
+	function test (str){
+		var st="";
+		for (var i=0;i<str.length;++i){
+			if ((i%2)!==0) {
+				st+=str[i].toUpperCase();
+				//console.log(i);
+			} else {
+				st+=str[i].toLowerCase();
+			}
+			
 		}
-
-
+		return console.log(st);
+	}
+	test(str1);
 	</script>
-
 </body>
 </html>
