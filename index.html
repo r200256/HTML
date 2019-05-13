@@ -8,23 +8,17 @@
 
 <body>
 	<script>
-	//ucFirst("вася") == "Вася";
-	//ucFirst("") == ""; // нет ошибок при пустой строке
-	var str1="вася";
-	function test (str){
-		var st="";
-		for (var i=0;i<str.length;++i){
-			if ((i%2)!==0) {
-				st+=str[i].toUpperCase();
-				//console.log(i);
-			} else {
-				st+=str[i].toLowerCase();
-			}
-			
-		}
-		return console.log(st);
+	var user = {
+		name:"Vasia",
+		age:30
+	};
+	var clone = {};
+	for (var key in user) {
+		clone[key] = user[key];
 	}
-	test(str1);
+	clone.name="Igor";
+	console.log(user.name);
+	console.log(clone.name);
 	</script>
 </body>
 </html>
