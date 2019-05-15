@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>LearnJavaScript</title>
-</head>
-<!--<script src="style.js"></script>-->
+  <head>
+    <meta charset="UTF-8" />
+    <title>LearnJavaScript</title>
+  </head>
+  <!--<script src="style.js"></script>-->
 
-<body>
-	<script>
-	//ucFirst("вася") == "Вася";
-	//ucFirst("") == ""; // нет ошибок при пустой строке
-	var str1="вася";
-	function test (str){
-		var st="";
-		for (var i=0;i<str.length;++i){
-			if ((i%2)!==0) {
-				st+=str[i].toUpperCase();
-				//console.log(i);
-			} else {
-				st+=str[i].toLowerCase();
-			}
-			
-		}
-		return console.log(st);
-	}
-	test(str1);
-	</script>
-</body>
+  <body>
+    <script>
+		"use strict";
+	  var arr = [5, 4, 3, 8, 0,55,998,545,87,887,5454,878,545,87,58,121,48,1,4,4,4,5,4,];
+	  
+      function filterRange(arr, a, b) {
+		  var rezult=[];
+		  for (var i=0;i<arr.length;++i){
+			  if (arr[i]>=a && arr[i]<=b)
+			  rezult.push(arr[i]);
+		  }
+		  return console.log(rezult);
+	  }
+
+      var filtered = filterRange(arr, 3, 5);
+      // теперь filtered = [5, 4, 3]
+      // arr не изменился
+    </script>
+  </body>
 </html>
