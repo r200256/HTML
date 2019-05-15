@@ -8,21 +8,35 @@
 
   <body>
     <script>
-		"use strict";
-	  var arr = [5, 4, 3, 8, 0,55,998,545,87,887,5454,878,545,87,58,121,48,1,4,4,4,5,4,];
-	  
-      function filterRange(arr, a, b) {
-		  var rezult=[];
-		  for (var i=0;i<arr.length;++i){
-			  if (arr[i]>=a && arr[i]<=b)
-			  rezult.push(arr[i]);
+      "use strict";
+      var arr = [];
+      for (var i = 2; i < 100; i++) {
+        arr[i] = i;
+      }
+      var p = 2;
+      do {
+        for (i = 2 * p; i < 100; i += p) {
+          arr[i] = false;
+		}
+		for (i=p+1;i<100;i++){
+			if(arr[i])break;
+		}
+		p=i;
+	  } while (p * p < 100);
+	  var sum=0;
+	  for (i=0;i<arr.length;i++){
+		  if (arr[i]){
+			  sum+=i;
 		  }
-		  return console.log(rezult);
 	  }
-
-      var filtered = filterRange(arr, 3, 5);
-      // теперь filtered = [5, 4, 3]
-      // arr не изменился
+      /*
+	  for (i=2;i<arr.length;i++){
+		  if (i*i==arr[i])
+		  arr.aplice(i,0);
+	  }
+	  */
+	  console.log(arr);
+	  console.log(sum);
     </script>
   </body>
 </html>
