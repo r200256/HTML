@@ -9,26 +9,15 @@
   <body>
     <script>
       "use strict";
-      var obj = {
-        className: "open menu"
-      };
-      console.log(obj.className);
-
-      function addClass(obj, cls) {
-        var classes = obj.className ? obj.className.split(" ") : [];
-        for (var i = 0; i <= classes.length; i++) {
-          if (classes[i] == cls) return;
-        }
-        classes.push(cls);
-        obj.className = classes.join(" ");
-        console.log(obj.className);
+      var str = "Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
+      var target="Иа";
+      var pos=0;
+      while(true){
+        var foundPos=str.indexOf(target,pos);
+        if (foundPos== -1) break;
+        console.log(foundPos);
+        pos=foundPos+1;
       }
-
-      addClass(obj, "new"); // obj.className='open menu new'
-      addClass(obj, "open"); // без изменений (класс уже существует)
-      addClass(obj, "me"); // obj.className='open menu new me'
-
-      //alert(obj.className); // "open menu new me"
     </script>
   </body>
 </html>
