@@ -10,13 +10,10 @@
     <script>
       "use strict";
       var str = "Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
-      var target="Иа";
-      var pos=0;
-      while(true){
-        var foundPos=str.indexOf(target,pos);
-        if (foundPos== -1) break;
-        console.log(foundPos);
-        pos=foundPos+1;
+      var target = "Иа";
+      var pos = -1;
+      while ((pos = str.indexOf(target, pos + 1)) !== -1) {
+        console.log(pos);
       }
     </script>
   </body>
