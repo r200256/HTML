@@ -9,12 +9,23 @@
   <body>
     <script>
       "use strict";
-      var str = "Ослик Иа-Иа посмотрел на виадук"; // ищем в этой строке
-      var target = "Иа";
-      var pos = -1;
-      while ((pos = str.indexOf(target, pos + 1)) !== -1) {
-        console.log(pos);
+      //Сингелтон
+      function makeCounter() {
+        var currentCount = 1;
+        return function() {
+          return currentCount++;
+        };
       }
+      var counter = makeCounter();
+      console.log(counter());
+      console.log(counter());
+      console.log(counter());
+      var counter2 = makeCounter();
+      console.log(counter2());
+      console.log(counter2());
+      console.log(counter2());
+      console.log(counter2());
+      console.log(counter2());
     </script>
   </body>
 </html>
