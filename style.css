@@ -1,9 +1,60 @@
-.b {
-  width: 500px;
-  /*background-color: #ffa;
-  border: 36px solid orange;*/
-  margin: 30px;
-  padding: 10px;
-  border-image: url("https://mdn.mozillademos.org/files/4127/border.png") 27 /
-    27px repeat round;
+
+ul {
+  font-size: 2em;
+  list-style-type: none;
+  margin-bottom: 100px;
+}
+li a {
+  text-decoration: none;
+  background-color: chartreuse;
+  display: block;
+  width: 5em;
+}
+li a:hover {
+  background-color: cornflowerblue;
+  color: red;
+}
+/*
+li a:hover:not(.od) {
+  background-color: rgb(237, 100, 214);
+  color: #06069e;
+}
+*/
+li a.active{
+  background-color: turquoise;
+}
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+/*
+.fi {
+  position: absolute;
+}
+.cont,
+.q,
+.w,
+.e {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+.q {
+  top: 100px;
+  left: 100px;
+  background-color: aqua;
+  z-index: 1;
+}
+.w {
+  left: 20px;
+  top: 20px;
+  background-color: orangered;
+  z-index: 3;
+  opacity: 0.5;
+}
+.e {
+  left: 50px;
+  top: 50px;
+  background-color: yellow;
+  z-index: 2;
 }
