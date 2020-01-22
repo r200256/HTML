@@ -1,115 +1,52 @@
-ul.topnav{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  overflow:hidden;
-  background-color: #333;
+body {
+  margin: 0;
 }
-ul.topnav li{
-  float: left;
-}
-ul.topnav li a {
-  display: block;
-  color:white;
-  text-align:center;
-  padding:14px 16px;
-  text-decoration: none;
-}
-ul.topnav li a:hover:not(.active){
-  background-color:#111;
-}
-ul.topnav li a.active{
-  background-color:#4caf50;
-}
-ul.topnav li.right{
-  float:right;
-}
-@media screen and (max-width:600px){
-  ul.topnav li.right,ul.topnav li{
-    float:none;
-  }
-}
-/*
-ul{
+ul.sidenav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow:hidden;
-  background-color: #333;
-  position:fixed;
-  bottom: 0;
-  width: 100%;
-}
-li{
-  float: left;
-  border-right: 1px solid white;
-}
-
-li a{
-  display: block;
-  color:white;
-  text-aligin:center;
-  padding:14px 16px;
-  text-decoration: none;
-}
-li a:hover{
-  background-color: #111;
-  
-}
-li:first-child{
-  background-color: teal;
-}
-li:last-child{
-  float:right;
-  border-right:none;
-  border-left: 1px solid white;
-}
-/*
-li a {
-  display: block;
-  color:#000;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-li a:hover{
-  background-color: #555;
-  color:white;
-}
-.active{
-  background-color: #4caf50;
-  color:white;
-}
-/*
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 200px;
+  width: 25%;
   background-color: #f1f1f1;
-  border: 1px solid #555;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
-li a {
+ul.sidenav li a {
   display: block;
   color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
-
-li {
-  text-align: center;
-  border-bottom: 1px solid #555;
-}
-
-li:last-child {
-  border-bottom: none;
-}
-
-li a.active {
+ul.sidenav li a.active {
   background-color: #4caf50;
   color: white;
 }
-
-li a:hover:not(.active) {
+ul.sidenav li a:hover:not(.active) {
   background-color: #555;
   color: white;
+}
+div.content {
+  margin-left: 25%;
+  padding: 1px 16px;
+  height: 1000px;
+}
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {
+    text-align: center;
+    float: none;
+  }
 }
