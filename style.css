@@ -1,3 +1,10 @@
+body{counter-reset:sec;}
+h2:before{
+  counter-increment: sec;
+  content:"№ "counter(sec)":  "
+}
+
+/*
 *{
   box-sizing:border-box;
 }
